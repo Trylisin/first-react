@@ -22,8 +22,6 @@ class App extends React.Component{
       }
     
     handleSubmit = (character) => {
-        console.log(character);
-        console.log("----------------------->",[...this.state.characters, character]);
         this.setState({ characters: [...this.state.characters, character] })
     }
     render(){
